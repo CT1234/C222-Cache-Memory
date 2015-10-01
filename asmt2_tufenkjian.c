@@ -65,7 +65,7 @@ void OPTION_1()
 	}
 
 	number_of_blocks = cache_size / block_size;
-    allocate_memory(number_of_tags, number_of_blocks);
+	allocate_memory(number_of_tags, number_of_blocks);
 	return;
 }
 
