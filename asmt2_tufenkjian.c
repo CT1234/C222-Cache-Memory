@@ -45,7 +45,6 @@ void allocate_memory(int number_of_tags, int number_of_blocks)
 void OPTION_1()
 {
     printf("Entered selection 1: \n");
-
 	printf("Enter main memory size (words): ");
 	scanf("%d", &mem_size);
 
@@ -72,11 +71,11 @@ void OPTION_1()
 
 void print_parameters(int tag, int block, int word, int value)
 {
-    	printf("-------------------------------------------\n");
-    	printf("|Tag%5d | Block:%5d | Word%5d (%3d) |\n",
-                tag,block,word,value);
-    	printf("-------------------------------------------\n");
-    	return;
+	printf("-------------------------------------------\n");
+	printf("|Tag%5d | Block:%5d | Word%5d (%3d) |\n",
+            tag,block,word,value);
+	printf("-------------------------------------------\n");
+	return;
 }
 
 void read()
@@ -101,7 +100,6 @@ void read()
     print_parameters( tag, block, word, initial_memory[memory_address] );
 
     return;
-
 }
 
 void write()
