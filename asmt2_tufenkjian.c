@@ -44,14 +44,14 @@ void allocate_memory(int number_of_tags, int number_of_blocks)
 
 void OPTION_1()
 {
-    printf("Entered selection 1: \n");
+	printf("Entered selection 1: \n");
 	printf("Enter main memory size (words): ");
 	scanf("%d", &mem_size);
-
-    printf("Enter cache size (words): ");
+	
+	printf("Enter cache size (words): ");
 	scanf("%d", &cache_size);
-
-    printf("Enter block size (words/block): ");
+	
+	printf("Enter block size (words/block): ");
 	scanf("%d", &block_size);
 
 	number_of_tags = mem_size/cache_size;
